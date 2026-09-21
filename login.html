@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Furniture Enquiry | WoodWorks</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link
+        rel="stylesheet"
+        href="form.css">
+
+</head>
+
+<body>
+
+    <header class="enquiry-header">
+
+        <div class="enquiry-controls">
+
+            <button
+                id="rtlToggle"
+                class="btn-secondary">
+                RTL
+            </button>
+
+            <button
+                id="themeToggle"
+                class="icon-btn"
+                aria-label="Toggle theme">
+
+                <i
+                    data-lucide="moon"
+                    class="icon">
+                </i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main class="enquiry-page">
+
+        <div class="enquiry-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="logo.png"
+                    alt="WoodWorks Custom Furniture & Carpentry Logo">
+
+                <span class="logo-text">
+                    Wood<span class="logo-header-secondary">Works</span>
+                </span>
+
+            </a>
+
+        </div>
+
+
+        <section class="enquiry-intro">
+
+            <span class="enquiry-tag">
+                CUSTOM FURNITURE ENQUIRY
+            </span>
+
+            <h1>
+                Let's Build
+                <span>Something Beautiful.</span>
+            </h1>
+
+            <p>
+                Tell us about your furniture requirements, preferred
+                materials and design ideas. Our team will review your
+                enquiry and get in touch to discuss your project.
+            </p>
+
+        </section>
+
+
+        <section class="enquiry-form-wrapper">
+
+            <form class="enquiry-form" id="enquiryForm">
+
+
+                <div class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span>01</span>
+
+                        <div>
+                            <h2>About You</h2>
+
+                            <p>
+                                Let us know how we can reach you.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+
+                            <label for="name">
+                                FULL NAME
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your full name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="phone">
+                                PHONE NUMBER
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="Enter your phone number"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="email">
+                                EMAIL ADDRESS
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email address"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="location">
+                                PROJECT LOCATION
+                            </label>
+
+                            <input
+                                type="text"
+                                id="location"
+                                placeholder="City / Location">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span>02</span>
+
+                        <div>
+                            <h2>Furniture Details</h2>
+
+                            <p>
+                                Tell us what you would like us to create.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+
+                            <label for="furniture">
+                                FURNITURE TYPE
+                            </label>
+
+                            <select id="furniture">
+
+                                <option value="">
+                                    Select furniture type
+                                </option>
+
+                                <option>Dining Table</option>
+                                <option>Coffee Table</option>
+                                <option>Bed</option>
+                                <option>Wardrobe</option>
+                                <option>TV Unit</option>
+                                <option>Bookshelf</option>
+                                <option>Storage Unit</option>
+                                <option>Office Furniture</option>
+                                <option>Custom Furniture</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="quantity">
+                                QUANTITY
+                            </label>
+
+                            <input
+                                type="number"
+                                id="quantity"
+                                min="1"
+                                placeholder="Number of pieces">
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="dimensions">
+                                APPROXIMATE DIMENSIONS
+                            </label>
+
+                            <input
+                                type="text"
+                                id="dimensions"
+                                placeholder="Example: 6 ft × 3 ft">
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="space">
+                                INTENDED SPACE
+                            </label>
+
+                            <select id="space">
+
+                                <option value="">
+                                    Select space
+                                </option>
+
+                                <option>Living Room</option>
+                                <option>Bedroom</option>
+                                <option>Dining Area</option>
+                                <option>Office</option>
+                                <option>Restaurant</option>
+                                <option>Commercial Space</option>
+                                <option>Other</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span>03</span>
+
+                        <div>
+                            <h2>Material & Finish</h2>
+
+                            <p>
+                                Choose your preferred look and material.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+
+                            <label for="material">
+                                PREFERRED MATERIAL
+                            </label>
+
+                            <select id="material">
+
+                                <option value="">
+                                    Select material
+                                </option>
+
+                                <option>Solid Wood</option>
+                                <option>Oak</option>
+                                <option>Teak</option>
+                                <option>Walnut</option>
+                                <option>Plywood</option>
+                                <option>MDF</option>
+                                <option>Not Sure</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="finish">
+                                PREFERRED FINISH
+                            </label>
+
+                            <select id="finish">
+
+                                <option value="">
+                                    Select finish
+                                </option>
+
+                                <option>Natural Wood</option>
+                                <option>Matte</option>
+                                <option>Gloss</option>
+                                <option>Stained</option>
+                                <option>Painted</option>
+                                <option>Not Sure</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span>04</span>
+
+                        <div>
+                            <h2>Project Details</h2>
+
+                            <p>
+                                Share your vision with us.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-field full-field">
+
+                        <label for="description">
+                            TELL US ABOUT YOUR PROJECT
+                        </label>
+
+                        <textarea
+                            id="description"
+                            rows="7"
+                            placeholder="Describe your furniture idea, preferred style, dimensions, requirements or anything else you would like us to know..."></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span>05</span>
+
+                        <div>
+                            <h2>Budget & Timeline</h2>
+
+                            <p>
+                                Help us understand your project expectations.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+
+                            <label for="budget">
+                                ESTIMATED BUDGET
+                            </label>
+
+                            <select id="budget">
+
+                                <option value="">
+                                    Select budget
+                                </option>
+
+                                <option>Below ₹25,000</option>
+                                <option>₹25,000 – ₹50,000</option>
+                                <option>₹50,000 – ₹1,00,000</option>
+                                <option>₹1,00,000 – ₹2,00,000</option>
+                                <option>Above ₹2,00,000</option>
+                                <option>Not Decided</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="timeline">
+                                EXPECTED TIMELINE
+                            </label>
+
+                            <select id="timeline">
+
+                                <option value="">
+                                    Select timeline
+                                </option>
+
+                                <option>As Soon As Possible</option>
+                                <option>Within 1 Month</option>
+                                <option>1–3 Months</option>
+                                <option>3–6 Months</option>
+                                <option>Flexible</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-submit-area">
+
+                    <label class="form-agreement">
+
+                        <input
+                            type="checkbox"
+                            required>
+
+                        <span>
+                            I agree to be contacted regarding my custom
+                            furniture enquiry.
+                        </span>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="submit-btn">
+
+                        Submit Enquiry
+
+                        <i
+                            data-lucide="arrow-up-right">
+                        </i>
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        const themeToggle = 
+    document.getElementById("themeToggle");
+
+
+if (localStorage.getItem("theme") === "dark") {
+
+    document.body.classList.add("dark");
+
+}
+
+
+if (themeToggle) {
+
+    themeToggle.innerHTML = 
+        document.body.classList.contains("dark") 
+        ? '<i data-lucide="sun"></i>' 
+        : '<i data-lucide="moon"></i>';
+
+
+    lucide.createIcons();
+
+
+    themeToggle.addEventListener("click", () => {
+
+        document.body.classList.toggle("dark");
+
+
+        if (
+            document.body.classList.contains("dark")
+        ) {
+
+            localStorage.setItem(
+                "theme",
+                "dark"
+            );
+
+            themeToggle.innerHTML = 
+                '<i data-lucide="sun"></i>';
+
+        } else {
+
+            localStorage.setItem(
+                "theme",
+                "light"
+            );
+
+            themeToggle.innerHTML = 
+                '<i data-lucide="moon"></i>';
+
+        }
+
+
+        lucide.createIcons();
+
+    });
+
+}
+
+
+
+const rtlToggle = 
+    document.getElementById("rtlToggle");
+
+
+const savedDir = 
+    localStorage.getItem("direction") 
+    || "ltr";
+
+
+document.documentElement.setAttribute(
+    "dir",
+    savedDir
+);
+
+
+if (rtlToggle) {
+
+    rtlToggle.textContent = 
+        savedDir === "rtl"
+        ? "LTR"
+        : "RTL";
+
+
+    rtlToggle.addEventListener("click", () => {
+
+        const currentDir = 
+            document.documentElement
+            .getAttribute("dir");
+
+
+        if (currentDir === "rtl") {
+
+            document.documentElement
+                .setAttribute("dir", "ltr");
+
+            localStorage.setItem(
+                "direction",
+                "ltr"
+            );
+
+            rtlToggle.textContent = "RTL";
+
+        } else {
+
+            document.documentElement
+                .setAttribute("dir", "rtl");
+
+            localStorage.setItem(
+                "direction",
+                "rtl"
+            );
+
+            rtlToggle.textContent = "LTR";
+
+        }
+
+    });
+
+}
+
+
+
+
+const enquiryForm =
+    document.getElementById("enquiryForm");
+
+
+if (enquiryForm) {
+
+    enquiryForm.addEventListener("submit", (event) => {
+
+        event.preventDefault();
+
+        alert(
+            "Thank you! Your custom furniture enquiry has been submitted."
+        );
+
+        enquiryForm.reset();
+
+    });
+
+}
+    </script>
+
+</body>
+
+</html>

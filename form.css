@@ -1,0 +1,827 @@
+:root {
+    --primary: #7A3E18;
+    --primary-dark: #3A2115;
+    --secondary: #C68A45;
+    --secondary-dark: #A96F32;
+
+    --bg-color: #F7F1E8;
+    --text-color: #2A211B;
+
+    --card-bg: #FFFDFC;
+    --border-color: #D8C5AD;
+
+    --primary-light: rgba(122, 62, 24, 0.12);
+    --secondary-light: rgba(198, 138, 69, 0.14);
+
+    --text-color-rgb: 42, 33, 27;
+
+    --bg: #F7F1E8;
+    --text: #2A211B;
+
+    --heading-color: #3A2115;
+    --text-light: #857568;
+
+    --surface-dark: #211914;
+    --surface-light: #FFFDFC;
+}
+
+
+body.dark {
+    --primary: #C68A45;
+    --primary-dark: #7A3E18;
+    --secondary: #D9A96A;
+    --secondary-dark: #B88443;
+
+    --bg-color: #17120F;
+    --text-color: #F5EDE3;
+
+    --card-bg: #2A211B;
+    --border-color: #49382B;
+
+    --primary-light: rgba(198, 138, 69, 0.16);
+    --secondary-light: rgba(217, 169, 106, 0.14);
+
+    --text-color-rgb: 245, 237, 227;
+
+    --bg: #17120F;
+    --text: #F5EDE3;
+
+    --heading-color: #F0D8B8;
+    --text-light: #BBAA9A;
+
+    --surface-dark: #31241a;
+    --surface-light: #2A211B;
+}
+
+
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: "Inter", sans-serif;
+
+    background: var(--bg-color);
+    color: var(--text-color);
+
+    transition:
+        background .3s ease,
+        color .3s ease;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HEADER CONTROLS
+========================= */
+
+.enquiry-header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    z-index: 20;
+}
+
+.enquiry-controls {
+    position: absolute;
+
+    top: 22px;
+    right: 5%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.btn-secondary {
+    height: 36px;
+
+    padding: 0 13px;
+
+    border: 1px solid var(--secondary);
+
+    background: transparent;
+
+    color: var(--text-color);
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--surface-light);
+}
+
+.icon-btn {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--secondary);
+    
+    background: transparent;
+
+    color: var(--text-color);
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        color .3s ease;
+}
+
+.icon-btn:hover {
+    background: var(--primary);
+    color:var(--surface-light);
+    
+}
+
+.icon-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.enquiry-page {
+    width: 100%;
+
+    padding: 45px 0 100px;
+
+    background: var(--bg-color);
+
+    transition: background .3s ease;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.enquiry-logo {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 15px;
+}
+
+.enquiry-logo a {
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    color: var(--primary);
+}
+
+.enquiry-logo .logo-text {
+    order: 2;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    letter-spacing: .3px;
+
+    color: var(--primary);
+}
+
+.logo-header-secondary {
+    color: var(--secondary);
+}
+
+.enquiry-logo img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+
+    order: 1;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.enquiry-intro {
+    width: min(720px, 90%);
+
+    margin: 15px auto 70px;
+
+    text-align: center;
+}
+
+.enquiry-tag {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--secondary);
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+.enquiry-tag::before,
+.enquiry-tag::after {
+    content: "";
+
+    width: 28px;
+    height: 1px;
+
+    background: var(--secondary);
+}
+
+.enquiry-intro h1 {
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(58px, 7vw, 90px);
+
+    line-height: .85;
+
+    font-weight: 500;
+
+    letter-spacing: -2px;
+}
+
+.enquiry-intro h1 span {
+    display: block;
+
+    color: var(--primary);
+}
+
+.enquiry-intro p {
+    max-width: 570px;
+
+    margin: 28px auto 0;
+
+    color: var(--text-light);
+
+    font-size: 11px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================
+   FORM WRAPPER
+========================= */
+
+.enquiry-form-wrapper {
+    width: min(1000px, 90%);
+
+    margin: 0 auto;
+}
+
+.enquiry-form {
+    width: 100%;
+
+    border-top: 1px solid var(--border-color);
+}
+
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.form-section {
+    padding: 42px 0;
+
+    border-bottom: 1px solid var(--border-color);
+
+    transition:
+        border-color .3s ease;
+}
+
+.form-section-heading {
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    gap: 20px;
+
+    margin-bottom: 32px;
+}
+
+.form-section-heading > span {
+    color: var(--secondary);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 22px;
+}
+
+.form-section-heading h2 {
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 32px;
+
+    line-height: 1;
+
+    font-weight: 600;
+}
+
+.form-section-heading p {
+    margin-top: 7px;
+
+    color: var(--text-light);
+
+    font-size: 9px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0 25px;
+}
+
+.form-field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+    margin-bottom: 22px;
+}
+
+.form-field label {
+    color: var(--text-light);
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+
+    border: 1px solid var(--border-color);
+
+    outline: none;
+
+    background: var(--card-bg);
+
+    color: var(--text-color);
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 10px;
+
+    transition:
+        border-color .3s ease,
+        background .3s ease,
+        color .3s ease,
+        box-shadow .3s ease;
+}
+
+.form-field input,
+.form-field select {
+    height: 49px;
+
+    padding: 0 15px;
+}
+
+.form-field textarea {
+    min-height: 150px;
+
+    padding: 15px;
+
+    resize: vertical;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: var(--text-light);
+
+    opacity: .7;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: var(--secondary);
+
+    box-shadow:
+        0 0 0 3px var(--secondary-light);
+}
+
+.form-field select {
+    cursor: pointer;
+}
+
+.form-field select option {
+    background: var(--card-bg);
+
+    color: var(--text-color);
+}
+
+.full-field {
+    width: 100%;
+}
+
+
+/* =========================
+   SUBMIT AREA
+========================= */
+
+.form-submit-area {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding-top: 35px;
+}
+
+.form-agreement {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: var(--text-light);
+
+    font-size: 8px;
+
+    line-height: 1.5;
+
+    cursor: pointer;
+}
+
+.form-agreement input {
+    accent-color: var(--primary);
+}
+
+.submit-btn {
+    min-width: 175px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 15px 24px;
+
+    border: 0;
+
+    background: var(--primary);
+
+    color: #fff;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.submit-btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+.submit-btn:hover {
+    background: var(--secondary);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+    .enquiry-page {
+        padding-top: 40px;
+    }
+
+    .enquiry-intro {
+        margin-top: 60px;
+    }
+
+    .enquiry-form-wrapper {
+        width: 90%;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .enquiry-controls {
+        top: 18px;
+        right: 4%;
+    }
+
+    .enquiry-page {
+        padding-top: 30px;
+    }
+
+    .enquiry-intro {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    .enquiry-intro h1 {
+        font-size: 60px;
+    }
+
+    .enquiry-intro p {
+        font-size: 10px;
+    }
+
+    .form-section {
+        padding: 32px 0;
+    }
+
+    .form-section-heading {
+        grid-template-columns: 40px 1fr;
+
+        gap: 15px;
+    }
+
+    .form-section-heading h2 {
+        font-size: 28px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .form-submit-area {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding-bottom: 20px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 360px) {
+
+    .enquiry-controls {
+        top: 14px;
+        right: 4%;
+
+        gap: 5px;
+    }
+
+    .btn-secondary {
+        height: 33px;
+
+        padding: 0 10px;
+
+        font-size: 8px;
+    }
+
+    .icon-btn {
+        width: 33px;
+        height: 33px;
+    }
+
+    .enquiry-logo img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .enquiry-logo .logo-text {
+        font-size: 20px;
+    }
+
+    .enquiry-intro {
+        width: 92%;
+
+        margin-top: 65px;
+        margin-bottom: 42px;
+    }
+
+    .enquiry-tag {
+        gap: 7px;
+
+        font-size: 8px;
+
+        letter-spacing: 1.7px;
+    }
+
+    .enquiry-tag::before,
+    .enquiry-tag::after {
+        width: 18px;
+    }
+
+    .enquiry-intro h1 {
+        font-size: 45px;
+
+        letter-spacing: -1px;
+    }
+
+    .enquiry-intro p {
+        font-size: 9px;
+
+        line-height: 1.75;
+    }
+
+    .enquiry-form-wrapper {
+        width: 92%;
+    }
+
+    .form-section {
+        padding: 27px 0;
+    }
+
+    .form-section-heading {
+        grid-template-columns: 30px 1fr;
+
+        gap: 10px;
+
+        margin-bottom: 25px;
+    }
+
+    .form-section-heading > span {
+        font-size: 19px;
+    }
+
+    .form-section-heading h2 {
+        font-size: 25px;
+    }
+
+    .form-section-heading p {
+        font-size: 8px;
+    }
+
+    .form-field {
+        margin-bottom: 18px;
+    }
+
+    .form-field input,
+    .form-field select {
+        height: 45px;
+
+        font-size: 9px;
+    }
+
+    .form-field textarea {
+        min-height: 120px;
+
+        font-size: 9px;
+    }
+
+    .form-agreement {
+        align-items: flex-start;
+
+        font-size: 8px;
+    }
+}
+
+
+/* =========================
+   RTL
+========================= */
+
+html[dir="rtl"] .enquiry-controls {
+    right: auto;
+    left: 5%;
+}
+
+html[dir="rtl"] .enquiry-page {
+    direction: rtl;
+}
+
+html[dir="rtl"] .form-section-heading {
+    direction: rtl;
+}
+
+html[dir="rtl"] .form-field {
+    text-align: right;
+}
+
+html[dir="rtl"] .form-field input,
+html[dir="rtl"] .form-field select,
+html[dir="rtl"] .form-field textarea {
+    text-align: right;
+}
+
+html[dir="rtl"] .form-submit-area {
+    direction: rtl;
+}
+
+html[dir="rtl"] .form-agreement {
+    direction: rtl;
+}
+
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .enquiry-controls {
+        right: auto;
+        left: 4%;
+    }
+
+    html[dir="rtl"] .form-submit-area {
+        align-items: stretch;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    html[dir="rtl"] .enquiry-controls {
+        right: auto;
+        left: 4%;
+    }
+}

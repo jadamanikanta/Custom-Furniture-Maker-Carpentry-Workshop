@@ -1,0 +1,3463 @@
+.process-hero {
+    width: 100%;
+    min-height: 88vh;
+
+    padding: 20px 0 80px;
+
+    background: var(--bg-color);
+
+    overflow: hidden;
+}
+
+.process-hero-container {
+    width: min(1250px, 90%);
+    min-height: 650px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: .9fr 1.1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.process-hero-content {
+    max-width: 540px;
+}
+
+.process-hero-tag {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    color: var(--secondary);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+.process-hero-tag::before {
+    content: "";
+
+    width: 32px;
+    height: 1px;
+
+    background: var(--secondary);
+}
+
+.process-hero-content h1 {
+    margin: 0;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(70px, 7vw, 105px);
+
+    line-height: .82;
+
+    font-weight: 500;
+
+    letter-spacing: -3px;
+}
+
+.process-hero-content h1 span {
+    color: var(--primary);
+}
+
+.process-hero-content p {
+    max-width: 470px;
+
+    margin: 30px 0;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+
+    line-height: 1.9;
+}
+
+.process-hero-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 15px 22px;
+
+    background: var(--primary);
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.process-hero-button svg {
+    width: 15px;
+    height: 15px;
+
+    transition: transform .3s ease;
+}
+
+.process-hero-button:hover {
+    background: var(--secondary);
+
+    transform: translateY(-2px);
+}
+
+.process-hero-button:hover svg {
+    transform: translate(3px, -3px);
+}
+
+
+.process-hero-visual {
+    position: relative;
+
+    min-height: 620px;
+}
+
+.process-hero-image {
+    position: absolute;
+
+    overflow: hidden;
+
+    background: #2b1c12;
+}
+
+.process-hero-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .8s ease;
+}
+
+.process-hero-image:hover img {
+    transform: scale(1.04);
+}
+
+.process-image-main {
+    top: 0;
+    right: 0;
+
+    width: 76%;
+    height: 560px;
+}
+
+.process-image-small {
+    left: 0;
+    bottom: 0;
+
+    width: 42%;
+    height: 275px;
+
+    border: 12px solid var(--bg-color);
+}
+
+.process-hero-badge {
+    position: absolute;
+
+    right: 7%;
+    bottom: 70px;
+
+    z-index: 3;
+
+    width: 105px;
+    height: 105px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--secondary);
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.process-hero-badge span {
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 700;
+}
+
+.process-hero-badge strong {
+    margin-top: 3px;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 21px;
+
+    line-height: 1;
+}
+
+
+@media (max-width: 1024px) {
+
+    .process-hero {
+        min-height: auto;
+
+        padding: 80px 0;
+    }
+
+    .process-hero-container {
+        min-height: 620px;
+
+        gap: 40px;
+    }
+
+    .process-hero-content h1 {
+        font-size: 72px;
+
+        letter-spacing: -2px;
+    }
+
+    .process-hero-content p {
+        font-size: 10px;
+    }
+
+    .process-hero-visual {
+        min-height: 550px;
+    }
+
+    .process-image-main {
+        width: 78%;
+        height: 500px;
+    }
+
+    .process-image-small {
+        width: 45%;
+        height: 230px;
+    }
+
+    .process-hero-badge {
+        width: 90px;
+        height: 90px;
+
+        right: 5%;
+        bottom: 55px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .process-hero {
+        padding: 75px 0;
+    }
+
+    .process-hero-container {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+        min-height: auto;
+    }
+
+    .process-hero-content {
+        max-width: 650px;
+
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .process-hero-tag {
+        justify-content: center;
+    }
+
+    .process-hero-content h1 {
+        font-size: 70px;
+    }
+
+    .process-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .process-hero-button {
+        margin: 0 auto;
+    }
+
+    .process-hero-visual {
+        min-height: 520px;
+    }
+
+    .process-image-main {
+        width: 78%;
+        height: 450px;
+    }
+
+    .process-image-small {
+        width: 45%;
+        height: 220px;
+    }
+
+    .process-hero-badge {
+        right: 8%;
+        bottom: 55px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .process-hero {
+        padding: 60px 0;
+    }
+
+    .process-hero-container {
+        width: 92%;
+
+        gap: 40px;
+    }
+
+    .process-hero-tag {
+        gap: 7px;
+
+        font-size: 8px;
+
+        letter-spacing: 1.8px;
+    }
+
+    .process-hero-tag::before {
+        width: 20px;
+    }
+
+    .process-hero-content h1 {
+        font-size: 48px;
+
+        letter-spacing: -1px;
+    }
+
+    .process-hero-content p {
+        margin: 22px auto;
+
+        font-size: 9px;
+
+        line-height: 1.75;
+    }
+
+    .process-hero-button {
+        width: 100%;
+
+        justify-content: center;
+
+        box-sizing: border-box;
+
+        padding: 14px 15px;
+
+        font-size: 8px;
+    }
+
+    .process-hero-visual {
+        min-height: 390px;
+    }
+
+    .process-image-main {
+        width: 78%;
+        height: 330px;
+    }
+
+    .process-image-small {
+        width: 45%;
+        height: 160px;
+
+        border-width: 7px;
+    }
+
+    .process-hero-badge {
+        width: 70px;
+        height: 70px;
+
+        right: 5%;
+        bottom: 40px;
+    }
+
+    .process-hero-badge span {
+        font-size: 5px;
+    }
+
+    .process-hero-badge strong {
+        font-size: 15px;
+    }
+}
+
+
+html[dir="rtl"] .process-hero-container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .process-hero-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .process-hero-tag {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .process-image-main {
+    right: auto;
+    left: 0;
+}
+
+html[dir="rtl"] .process-image-small {
+    left: auto;
+    right: 0;
+}
+
+html[dir="rtl"] .process-hero-badge {
+    right: auto;
+    left: 7%;
+}
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .process-hero-content {
+        text-align: center;
+    }
+
+    html[dir="rtl"] .process-hero-tag {
+        justify-content: center;
+    }
+
+    html[dir="rtl"] .process-hero-badge {
+        right: auto;
+        left: 8%;
+    }
+}
+
+@media (max-width: 360px) {
+
+    html[dir="rtl"] .process-hero-badge {
+        right: auto;
+        left: 5%;
+    }
+}
+
+.work-process-section {
+    width: 100%;
+    padding: 120px 0;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.work-process-container {
+    width: min(1250px, 90%);
+    margin: 0 auto;
+}
+
+.work-process-heading {
+    max-width: 760px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.work-process-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--secondary);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.work-process-tag::before,
+.work-process-tag::after {
+    content: "";
+
+    width: 30px;
+    height: 1px;
+
+    background: var(--secondary);
+}
+
+.work-process-heading h2 {
+    margin: 0;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(52px, 5.5vw, 76px);
+    line-height: .9;
+
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.work-process-heading h2 span {
+    color: var(--primary);
+}
+
+.work-process-heading p {
+    max-width: 610px;
+
+    margin: 24px auto 0;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+.work-process-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.work-process-card {
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 30px 25px 28px;
+
+    border-right: 1px solid var(--border-color);
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.work-process-card:last-child {
+    border-right: 0;
+}
+
+.work-process-card:hover {
+    background: var(--bg-color);
+
+    transform: translateY(-5px);
+}
+
+
+.work-process-card-top {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 55px;
+}
+
+.work-process-card-top > span {
+    color: var(--secondary);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 20px;
+}
+
+
+.work-process-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border-color);
+
+    color: var(--primary);
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.work-process-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.work-process-card:hover .work-process-icon {
+    background: var(--primary);
+
+    border-color: var(--primary);
+
+    color: #fff;
+}
+
+
+.work-process-card-content {
+    flex: 1;
+}
+
+.work-process-card-content h3 {
+    margin: 0 0 13px;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 29px;
+
+    line-height: 1;
+
+    font-weight: 600;
+}
+
+.work-process-card-content p {
+    max-width: 240px;
+
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 9px;
+
+    line-height: 1.85;
+}
+
+
+.work-process-line {
+    width: 38px;
+    height: 2px;
+
+    margin-top: 25px;
+
+    background: var(--secondary);
+
+    transition: width .3s ease;
+}
+
+.work-process-card:hover .work-process-line {
+    width: 65px;
+}
+
+
+@media (max-width: 1024px) {
+
+    .work-process-section {
+        padding: 90px 0;
+    }
+
+    .work-process-heading {
+        margin-bottom: 50px;
+    }
+
+    .work-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .work-process-card {
+        min-height: 300px;
+
+        padding: 25px 22px;
+    }
+
+    .work-process-card:nth-child(2) {
+        border-right: 0;
+    }
+
+    .work-process-card:nth-child(-n+2) {
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .work-process-card-top {
+        margin-bottom: 40px;
+    }
+
+    .work-process-card-content h3 {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .work-process-section {
+        padding: 75px 0;
+    }
+
+    .work-process-heading {
+        margin-bottom: 40px;
+    }
+
+    .work-process-heading h2 {
+        font-size: 56px;
+    }
+
+    .work-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-process-card,
+    .work-process-card:nth-child(2) {
+        min-height: 280px;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .work-process-card:last-child {
+        border-bottom: 0;
+    }
+
+    .work-process-card-top {
+        margin-bottom: 35px;
+    }
+
+    .work-process-card-content p {
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .work-process-section {
+        padding: 60px 0;
+    }
+
+    .work-process-container {
+        width: 92%;
+    }
+
+    .work-process-tag {
+        gap: 7px;
+
+        font-size: 8px;
+        letter-spacing: 1.8px;
+    }
+
+    .work-process-tag::before,
+    .work-process-tag::after {
+        width: 20px;
+    }
+
+    .work-process-heading h2 {
+        font-size: 43px;
+    }
+
+    .work-process-heading p {
+        font-size: 10px;
+        line-height: 1.75;
+    }
+
+    .work-process-card {
+        min-height: 260px;
+
+        padding: 22px 17px;
+    }
+
+    .work-process-card-top {
+        margin-bottom: 30px;
+    }
+
+    .work-process-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .work-process-icon svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .work-process-card-content h3 {
+        font-size: 24px;
+    }
+
+    .work-process-card-content p {
+        font-size: 9px;
+        line-height: 1.7;
+    }
+}
+
+
+html[dir="rtl"] .work-process-container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .work-process-card {
+    border-right: 0;
+    border-left: 1px solid var(--border-color);
+}
+
+html[dir="rtl"] .work-process-card:last-child {
+    border-left: 0;
+}
+
+@media (max-width: 1024px) {
+
+    html[dir="rtl"] .work-process-card:nth-child(2) {
+        border-left: 0;
+    }
+
+    html[dir="rtl"] .work-process-card:nth-child(3) {
+        border-left: 1px solid var(--border-color);
+    }
+}
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .work-process-card,
+    html[dir="rtl"] .work-process-card:nth-child(3) {
+        border-left: 0;
+    }
+}
+
+.craft-values-section {
+    width: 100%;
+    padding: 120px 0;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.craft-values-container {
+    width: min(1250px, 90%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.craft-values-intro {
+    max-width: 430px;
+}
+
+.craft-values-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--secondary);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.craft-values-tag::before {
+    content: "";
+
+    width: 30px;
+    height: 1px;
+
+    background: var(--secondary);
+}
+
+.craft-values-intro h2 {
+    margin: 0;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(55px, 5.5vw, 76px);
+    line-height: .88;
+
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.craft-values-intro h2 span {
+    color: var(--primary);
+}
+
+.craft-values-intro p {
+    margin: 25px 0 28px;
+
+    color: var(--text-light);
+
+    font-size: 11px;
+    line-height: 1.9;
+}
+
+.craft-values-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--heading-color);
+
+    text-decoration: none;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .7px;
+
+    border-bottom: 1px solid var(--secondary);
+
+    padding-bottom: 7px;
+}
+
+.craft-values-link svg {
+    width: 14px;
+    height: 14px;
+
+    color: var(--secondary);
+
+    transition: transform .3s ease;
+}
+
+.craft-values-link:hover svg {
+    transform: translate(3px, -3px);
+}
+
+
+.craft-values-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+
+.craft-value-card {
+    position: relative;
+
+    min-height: 280px;
+
+    padding: 28px;
+
+    border: 1px solid var(--border-color);
+
+    background: var(--bg-color);
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease;
+}
+
+.craft-value-card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--secondary);
+}
+
+
+.craft-value-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 35px;
+
+    border: 1px solid var(--border-color);
+
+    color: var(--secondary);
+}
+
+.craft-value-icon svg {
+    width: 19px;
+    height: 19px;
+}
+
+.craft-value-number {
+    position: absolute;
+
+    top: 27px;
+    right: 27px;
+
+    color: var(--secondary);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 19px;
+}
+
+.craft-value-card h3 {
+    margin: auto 0 10px;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 28px;
+    line-height: 1;
+
+    font-weight: 600;
+}
+
+.craft-value-card p {
+    max-width: 300px;
+
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 9px;
+    line-height: 1.8;
+}
+
+
+.craft-value-featured {
+    padding: 0;
+
+    min-height: 280px;
+}
+
+.craft-value-image {
+    position: absolute;
+
+    inset: 0;
+}
+
+.craft-value-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(15, 9, 5, .85),
+            rgba(15, 9, 5, .08) 70%
+        );
+}
+
+.craft-value-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .7s ease;
+}
+
+.craft-value-featured:hover .craft-value-image img {
+    transform: scale(1.06);
+}
+
+.craft-value-overlay {
+    position: absolute;
+
+    z-index: 2;
+
+    left: 27px;
+    right: 27px;
+    bottom: 27px;
+}
+
+.craft-value-overlay span {
+    color: var(--secondary);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 18px;
+}
+
+.craft-value-overlay h3 {
+    margin: 5px 0 0;
+
+    color: #fff;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 30px;
+    line-height: 1;
+
+    font-weight: 500;
+}
+
+
+@media (max-width: 1024px) {
+
+    .craft-values-section {
+        padding: 90px 0;
+    }
+
+    .craft-values-container {
+        gap: 40px;
+    }
+
+    .craft-values-intro h2 {
+        font-size: 58px;
+    }
+
+    .craft-value-card {
+        min-height: 250px;
+
+        padding: 23px;
+    }
+
+    .craft-value-featured {
+        min-height: 250px;
+    }
+
+    .craft-value-card h3 {
+        font-size: 24px;
+    }
+
+    .craft-value-card p {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .craft-values-section {
+        padding: 75px 0;
+    }
+
+    .craft-values-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .craft-values-intro {
+        max-width: 650px;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .craft-values-tag {
+        justify-content: center;
+    }
+
+    .craft-values-intro h2 {
+        font-size: 58px;
+    }
+
+    .craft-values-intro p {
+        max-width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .craft-values-grid {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .craft-values-section {
+        padding: 60px 0;
+    }
+
+    .craft-values-container {
+        width: 92%;
+        gap: 35px;
+    }
+
+    .craft-values-tag {
+        gap: 7px;
+
+        font-size: 8px;
+        letter-spacing: 1.8px;
+    }
+
+    .craft-values-tag::before {
+        width: 20px;
+    }
+
+    .craft-values-intro h2 {
+        font-size: 43px;
+    }
+
+    .craft-values-intro p {
+        font-size: 9px;
+        line-height: 1.75;
+    }
+
+    .craft-values-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .craft-value-card {
+        min-height: 240px;
+        padding: 21px 17px;
+    }
+
+    .craft-value-featured {
+        min-height: 300px;
+    }
+
+    .craft-value-icon {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 30px;
+    }
+
+    .craft-value-number {
+        top: 20px;
+        right: 18px;
+    }
+
+    .craft-value-card h3 {
+        font-size: 25px;
+    }
+
+    .craft-value-card p {
+        font-size: 9px;
+    }
+
+    .craft-value-overlay {
+        left: 18px;
+        right: 18px;
+        bottom: 20px;
+    }
+}
+
+
+html[dir="rtl"] .craft-values-container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .craft-values-intro {
+    text-align: right;
+}
+
+html[dir="rtl"] .craft-values-tag {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .craft-value-number {
+    right: auto;
+    left: 27px;
+}
+
+html[dir="rtl"] .craft-value-overlay {
+    left: 27px;
+    right: 27px;
+}
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .craft-values-intro {
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+
+    html[dir="rtl"] .craft-value-number {
+        right: auto;
+        left: 18px;
+    }
+
+    html[dir="rtl"] .craft-value-overlay {
+        left: 18px;
+        right: 18px;
+    }
+}
+
+.process-journey-section {
+    width: 100%;
+    padding: 120px 0;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.process-journey-container {
+    width: min(1250px, 90%);
+    margin: 0 auto;
+}
+
+.process-journey-heading {
+    max-width: 760px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.process-journey-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--secondary);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.process-journey-tag::before,
+.process-journey-tag::after {
+    content: "";
+
+    width: 30px;
+    height: 1px;
+
+    background: var(--secondary);
+}
+
+.process-journey-heading h2 {
+    margin: 0;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(52px, 5.5vw, 76px);
+    line-height: .9;
+
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.process-journey-heading h2 span {
+    color: var(--primary);
+}
+
+.process-journey-heading p {
+    max-width: 620px;
+
+    margin: 24px auto 0;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+.process-journey-layout {
+    display: grid;
+
+    grid-template-columns: 1.05fr .95fr;
+
+    min-height: 570px;
+
+    border: 1px solid var(--border-color);
+}
+
+
+.process-journey-image {
+    position: relative;
+
+    min-height: 570px;
+
+    overflow: hidden;
+}
+
+.process-journey-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(15, 9, 5, .78),
+            rgba(15, 9, 5, .05) 65%
+        );
+}
+
+.process-journey-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .8s ease;
+}
+
+.process-journey-image:hover img {
+    transform: scale(1.04);
+}
+
+.process-journey-image-label {
+    position: absolute;
+
+    z-index: 2;
+
+    left: 35px;
+    bottom: 32px;
+}
+
+.process-journey-image-label span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: rgba(255,255,255,.65);
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.process-journey-image-label strong {
+    color: #fff;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 38px;
+    line-height: 1;
+
+    font-weight: 500;
+}
+
+
+.process-journey-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: var(--bg-color);
+}
+
+.process-journey-detail {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 285px;
+
+    padding: 30px;
+
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.process-journey-detail:nth-child(2n) {
+    border-left: 0;
+}
+
+.process-journey-detail:nth-child(3),
+.process-journey-detail:nth-child(4) {
+    border-bottom: 0;
+}
+
+.process-journey-detail:hover {
+    background: var(--bg-color);
+
+    transform: translateY(-3px);
+}
+
+.process-journey-detail > span {
+    color: var(--secondary);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 20px;
+}
+
+.process-journey-detail h3 {
+    margin: 0 0 10px;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 30px;
+    line-height: 1;
+
+    font-weight: 600;
+}
+
+.process-journey-detail p {
+    max-width: 210px;
+
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 9px;
+    line-height: 1.8;
+}
+
+
+@media (max-width: 1024px) {
+
+    .process-journey-section {
+        padding: 90px 0;
+    }
+
+    .process-journey-heading {
+        margin-bottom: 50px;
+    }
+
+    .process-journey-layout {
+        min-height: 500px;
+    }
+
+    .process-journey-image {
+        min-height: 500px;
+    }
+
+    .process-journey-detail {
+        min-height: 250px;
+        padding: 23px;
+    }
+
+    .process-journey-detail h3 {
+        font-size: 25px;
+    }
+
+    .process-journey-detail p {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .process-journey-section {
+        padding: 75px 0;
+    }
+
+    .process-journey-heading {
+        margin-bottom: 40px;
+    }
+
+    .process-journey-heading h2 {
+        font-size: 56px;
+    }
+
+    .process-journey-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .process-journey-image {
+        min-height: 450px;
+        height: 450px;
+    }
+
+    .process-journey-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .process-journey-detail {
+        min-height: 230px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .process-journey-section {
+        padding: 60px 0;
+    }
+
+    .process-journey-container {
+        width: 92%;
+    }
+
+    .process-journey-tag {
+        gap: 7px;
+
+        font-size: 8px;
+        letter-spacing: 1.8px;
+    }
+
+    .process-journey-tag::before,
+    .process-journey-tag::after {
+        width: 20px;
+    }
+
+    .process-journey-heading h2 {
+        font-size: 43px;
+    }
+
+    .process-journey-heading p {
+        font-size: 10px;
+        line-height: 1.75;
+    }
+
+    .process-journey-image {
+        min-height: 350px;
+        height: 350px;
+    }
+
+    .process-journey-image-label {
+        left: 18px;
+        bottom: 20px;
+    }
+
+    .process-journey-image-label strong {
+        font-size: 28px;
+    }
+
+    .process-journey-details {
+        grid-template-columns: 1fr;
+    }
+
+    .process-journey-detail,
+    .process-journey-detail:nth-child(3) {
+        min-height: 210px;
+
+        border-left: 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .process-journey-detail:last-child {
+        border-bottom: 0;
+    }
+
+    .process-journey-detail h3 {
+        font-size: 25px;
+    }
+
+    .process-journey-detail p {
+        font-size: 9px;
+    }
+}
+
+
+html[dir="rtl"] .process-journey-container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .process-journey-image-label {
+    left: auto;
+    right: 35px;
+}
+
+html[dir="rtl"] .process-journey-detail {
+    border-left: 0;
+    border-right: 1px solid var(--border-color);
+}
+
+html[dir="rtl"] .process-journey-detail:nth-child(2n) {
+    border-right: 0;
+}
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .process-journey-detail {
+        border-right: 0;
+    }
+}
+
+@media (max-width: 360px) {
+
+    html[dir="rtl"] .process-journey-image-label {
+        left: auto;
+        right: 18px;
+    }
+}
+
+.workshop-standards-section {
+    width: 100%;
+    padding: 120px 0;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.workshop-standards-container {
+    width: min(1250px, 90%);
+    margin: 0 auto;
+}
+
+.workshop-standards-heading {
+    max-width: 760px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.workshop-standards-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--secondary);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.workshop-standards-tag::before,
+.workshop-standards-tag::after {
+    content: "";
+
+    width: 30px;
+    height: 1px;
+
+    background: var(--secondary);
+}
+
+.workshop-standards-heading h2 {
+    margin: 0;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(52px, 5.5vw, 76px);
+    line-height: .9;
+
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.workshop-standards-heading h2 span {
+    color: var(--primary);
+}
+
+.workshop-standards-heading p {
+    max-width: 620px;
+
+    margin: 24px auto 0;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+.workshop-standards-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+.workshop-standard-card {
+    position: relative;
+
+    min-height: 270px;
+
+    padding: 32px;
+
+    border: 1px solid var(--border-color);
+
+    background: var(--bg-color);
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease;
+}
+
+.workshop-standard-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 3px;
+
+    background: var(--secondary);
+
+    transition: width .4s ease;
+}
+
+.workshop-standard-card:hover {
+    transform: translateY(-6px);
+
+    border-color: var(--secondary);
+}
+
+.workshop-standard-card:hover::before {
+    width: 100%;
+}
+
+
+.workshop-standard-number {
+    position: absolute;
+
+    top: 25px;
+    right: 28px;
+
+    color: var(--secondary);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 21px;
+}
+
+
+.workshop-standard-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: auto;
+
+    border: 1px solid var(--border-color);
+
+    color: var(--primary);
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.workshop-standard-icon svg {
+    width: 21px;
+    height: 21px;
+}
+
+.workshop-standard-card:hover .workshop-standard-icon {
+    background: var(--primary);
+
+    border-color: var(--primary);
+
+    color: #fff;
+}
+
+
+.workshop-standard-content {
+    margin-top: 55px;
+}
+
+.workshop-standard-content > span {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: var(--secondary);
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.workshop-standard-content h3 {
+    margin: 0 0 13px;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 31px;
+    line-height: 1;
+
+    font-weight: 600;
+}
+
+.workshop-standard-content p {
+    max-width: 310px;
+
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 9px;
+    line-height: 1.85;
+}
+
+
+@media (max-width: 1024px) {
+
+    .workshop-standards-section {
+        padding: 90px 0;
+    }
+
+    .workshop-standards-heading {
+        margin-bottom: 50px;
+    }
+
+    .workshop-standard-card {
+        min-height: 330px;
+
+        padding: 25px;
+    }
+
+    .workshop-standard-content {
+        margin-top: 45px;
+    }
+
+    .workshop-standard-content h3 {
+        font-size: 26px;
+    }
+
+    .workshop-standard-content p {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .workshop-standards-section {
+        padding: 75px 0;
+    }
+
+    .workshop-standards-heading {
+        margin-bottom: 40px;
+    }
+
+    .workshop-standards-heading h2 {
+        font-size: 56px;
+    }
+
+    .workshop-standards-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .workshop-standard-card {
+        min-height: 300px;
+    }
+
+    .workshop-standard-content p {
+        max-width: 520px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .workshop-standards-section {
+        padding: 60px 0;
+    }
+
+    .workshop-standards-container {
+        width: 92%;
+    }
+
+    .workshop-standards-tag {
+        gap: 7px;
+
+        font-size: 8px;
+        letter-spacing: 1.8px;
+    }
+
+    .workshop-standards-tag::before,
+    .workshop-standards-tag::after {
+        width: 20px;
+    }
+
+    .workshop-standards-heading h2 {
+        font-size: 43px;
+    }
+
+    .workshop-standards-heading p {
+        font-size: 10px;
+        line-height: 1.75;
+    }
+
+    .workshop-standard-card {
+        min-height: 280px;
+
+        padding: 21px 18px;
+    }
+
+    .workshop-standard-number {
+        top: 20px;
+        right: 18px;
+
+        font-size: 18px;
+    }
+
+    .workshop-standard-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .workshop-standard-icon svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .workshop-standard-content {
+        margin-top: 35px;
+    }
+
+    .workshop-standard-content h3 {
+        font-size: 25px;
+    }
+
+    .workshop-standard-content p {
+        font-size: 9px;
+        line-height: 1.75;
+    }
+}
+
+
+html[dir="rtl"] .workshop-standards-container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .workshop-standard-number {
+    right: auto;
+    left: 28px;
+}
+
+html[dir="rtl"] .workshop-standard-card {
+    text-align: right;
+}
+
+@media (max-width: 360px) {
+
+    html[dir="rtl"] .workshop-standard-number {
+        right: auto;
+        left: 18px;
+    }
+}
+
+.craft-materials-section {
+    width: 100%;
+    padding: 120px 0;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.craft-materials-container {
+    width: min(1250px, 90%);
+    margin: 0 auto;
+}
+
+.craft-materials-heading {
+    max-width: 760px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.craft-materials-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--secondary);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.craft-materials-tag::before,
+.craft-materials-tag::after {
+    content: "";
+
+    width: 30px;
+    height: 1px;
+
+    background: var(--secondary);
+}
+
+.craft-materials-heading h2 {
+    margin: 0;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(52px, 5.5vw, 76px);
+    line-height: .9;
+
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.craft-materials-heading h2 span {
+    color: var(--primary);
+}
+
+.craft-materials-heading p {
+    max-width: 620px;
+
+    margin: 24px auto 0;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+.craft-materials-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+.craft-material-card {
+    border: 1px solid var(--border-color);
+
+    background: var(--bg-color);
+
+    overflow: hidden;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease;
+}
+
+.craft-material-card:hover {
+    transform: translateY(-6px);
+
+    border-color: var(--secondary);
+}
+
+
+.craft-material-image {
+    position: relative;
+
+    width: 100%;
+    height: 320px;
+
+    overflow: hidden;
+}
+
+.craft-material-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .7s ease;
+}
+
+.craft-material-card:hover .craft-material-image img {
+    transform: scale(1.06);
+}
+
+.craft-material-image span {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--secondary);
+
+    color: #fff;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 15px;
+}
+
+
+.craft-material-content {
+    min-height: 145px;
+
+    padding: 27px 28px;
+
+    box-sizing: border-box;
+}
+
+.craft-material-content > span {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: var(--secondary);
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.craft-material-content h3 {
+    margin: 0 0 12px;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 31px;
+    line-height: 1;
+
+    font-weight: 600;
+}
+
+.craft-material-content p {
+    max-width: 300px;
+
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 9px;
+    line-height: 1.8;
+}
+
+
+@media (max-width: 1024px) {
+
+    .craft-materials-section {
+        padding: 90px 0;
+    }
+
+    .craft-materials-heading {
+        margin-bottom: 50px;
+    }
+
+    .craft-material-image {
+        height: 270px;
+    }
+
+    .craft-material-content {
+        min-height: 175px;
+
+        padding: 23px;
+    }
+
+    .craft-material-content h3 {
+        font-size: 27px;
+    }
+
+    .craft-material-content p {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .craft-materials-section {
+        padding: 75px 0;
+    }
+
+    .craft-materials-heading {
+        margin-bottom: 40px;
+    }
+
+    .craft-materials-heading h2 {
+        font-size: 56px;
+    }
+
+    .craft-materials-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .craft-material-image {
+        height: 330px;
+    }
+
+    .craft-material-content {
+        min-height: 170px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .craft-materials-section {
+        padding: 60px 0;
+    }
+
+    .craft-materials-container {
+        width: 92%;
+    }
+
+    .craft-materials-tag {
+        gap: 7px;
+
+        font-size: 8px;
+        letter-spacing: 1.8px;
+    }
+
+    .craft-materials-tag::before,
+    .craft-materials-tag::after {
+        width: 20px;
+    }
+
+    .craft-materials-heading h2 {
+        font-size: 43px;
+    }
+
+    .craft-materials-heading p {
+        font-size: 10px;
+        line-height: 1.75;
+    }
+
+    .craft-material-image {
+        height: 260px;
+    }
+
+    .craft-material-image span {
+        top: 14px;
+        right: 14px;
+
+        width: 34px;
+        height: 34px;
+    }
+
+    .craft-material-content {
+        min-height: 165px;
+
+        padding: 21px 18px;
+    }
+
+    .craft-material-content h3 {
+        font-size: 25px;
+    }
+
+    .craft-material-content p {
+        font-size: 9px;
+        line-height: 1.75;
+    }
+}
+
+
+html[dir="rtl"] .craft-materials-container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .craft-materials-card {
+    direction: rtl;
+}
+
+html[dir="rtl"] .craft-material-image span {
+    right: auto;
+    left: 18px;
+}
+
+@media (max-width: 360px) {
+
+    html[dir="rtl"] .craft-material-image span {
+        right: auto;
+        left: 14px;
+    }
+}
+
+.craft-detail-section {
+    width: 100%;
+    padding: 120px 0;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.craft-detail-container {
+    width: min(1250px, 90%);
+    margin: 0 auto;
+}
+
+.craft-detail-header {
+    margin-bottom: 70px;
+}
+
+.craft-detail-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--secondary);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.craft-detail-tag::before {
+    content: "";
+
+    width: 30px;
+    height: 1px;
+
+    background: var(--secondary);
+}
+
+.craft-detail-header h2 {
+    max-width: 800px;
+
+    margin: 0;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(60px, 7vw, 96px);
+
+    line-height: .85;
+
+    font-weight: 500;
+
+    letter-spacing: -2.5px;
+}
+
+.craft-detail-header h2 span {
+    color: var(--primary);
+}
+
+
+.craft-detail-feature {
+    position: relative;
+
+    min-height: 600px;
+}
+
+.craft-detail-image {
+    width: 72%;
+    height: 600px;
+
+    overflow: hidden;
+}
+
+.craft-detail-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+}
+
+.craft-detail-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .8s ease;
+}
+
+.craft-detail-image:hover img {
+    transform: scale(1.04);
+}
+
+
+.craft-detail-copy {
+    position: absolute;
+
+    z-index: 2;
+
+    right: 0;
+    bottom: 45px;
+
+    width: 42%;
+
+    padding: 48px;
+
+    background: var(--bg-color);
+
+    border: 1px solid var(--border-color);
+}
+
+.craft-detail-index {
+    display: block;
+
+    margin-bottom: 35px;
+
+    color: var(--secondary);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.craft-detail-copy h3 {
+    margin: 0 0 20px;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 43px;
+
+    line-height: .95;
+
+    font-weight: 500;
+}
+
+.craft-detail-copy p {
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 10px;
+
+    line-height: 1.9;
+}
+
+.craft-detail-signature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 35px;
+}
+
+.craft-detail-signature span {
+    width: 35px;
+    height: 1px;
+
+    background: var(--secondary);
+}
+
+.craft-detail-signature strong {
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+
+.craft-detail-strip {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 65px;
+
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.craft-detail-strip-item {
+    min-height: 100px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    border-right: 1px solid var(--border-color);
+}
+
+.craft-detail-strip-item:last-child {
+    border-right: 0;
+}
+
+.craft-detail-strip-item span {
+    color: var(--secondary);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 18px;
+}
+
+.craft-detail-strip-item strong {
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 19px;
+
+    font-weight: 600;
+}
+
+
+@media (max-width: 1024px) {
+
+    .craft-detail-section {
+        padding: 90px 0;
+    }
+
+    .craft-detail-header {
+        margin-bottom: 55px;
+    }
+
+    .craft-detail-feature {
+        min-height: 520px;
+    }
+
+    .craft-detail-image {
+        width: 70%;
+        height: 520px;
+    }
+
+    .craft-detail-copy {
+        width: 45%;
+
+        padding: 35px;
+
+        bottom: 30px;
+    }
+
+    .craft-detail-copy h3 {
+        font-size: 34px;
+    }
+
+    .craft-detail-strip {
+        margin-top: 50px;
+    }
+
+    .craft-detail-strip-item {
+        padding: 20px 16px;
+
+        gap: 10px;
+    }
+
+    .craft-detail-strip-item strong {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .craft-detail-section {
+        padding: 75px 0;
+    }
+
+    .craft-detail-header {
+        margin-bottom: 40px;
+
+        text-align: center;
+    }
+
+    .craft-detail-tag {
+        justify-content: center;
+    }
+
+    .craft-detail-header h2 {
+        font-size: 60px;
+    }
+
+    .craft-detail-feature {
+        min-height: auto;
+    }
+
+    .craft-detail-image {
+        width: 100%;
+        height: 450px;
+    }
+
+    .craft-detail-copy {
+        position: relative;
+
+        right: auto;
+        bottom: auto;
+
+        width: 85%;
+
+        margin: -70px auto 0;
+
+        padding: 35px;
+
+        z-index: 3;
+    }
+
+    .craft-detail-copy h3 {
+        font-size: 38px;
+    }
+
+    .craft-detail-strip {
+        grid-template-columns: repeat(2, 1fr);
+
+        margin-top: 40px;
+    }
+
+    .craft-detail-strip-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .craft-detail-strip-item:nth-child(-n+2) {
+        border-bottom: 1px solid var(--border-color);
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .craft-detail-section {
+        padding: 60px 0;
+    }
+
+    .craft-detail-container {
+        width: 92%;
+    }
+
+    .craft-detail-tag {
+        font-size: 8px;
+
+        letter-spacing: 1.8px;
+    }
+
+    .craft-detail-tag::before {
+        width: 20px;
+    }
+
+    .craft-detail-header h2 {
+        font-size: 46px;
+
+        letter-spacing: -1px;
+    }
+
+    .craft-detail-image {
+        height: 320px;
+    }
+
+    .craft-detail-copy {
+        width: 88%;
+
+        margin-top: -45px;
+
+        padding: 25px 20px;
+    }
+
+    .craft-detail-index {
+        margin-bottom: 25px;
+    }
+
+    .craft-detail-copy h3 {
+        font-size: 30px;
+    }
+
+    .craft-detail-copy p {
+        font-size: 9px;
+
+        line-height: 1.75;
+    }
+
+    .craft-detail-signature {
+        margin-top: 25px;
+    }
+
+    .craft-detail-strip {
+        grid-template-columns: 1fr;
+
+        margin-top: 30px;
+    }
+
+    .craft-detail-strip-item {
+        min-height: 70px;
+
+        padding: 16px;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .craft-detail-strip-item:last-child {
+        border-bottom: 0;
+    }
+
+    .craft-detail-strip-item:nth-child(2) {
+        border-right: 0;
+    }
+}
+
+
+html[dir="rtl"] .craft-detail-container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .craft-detail-copy {
+    right: auto;
+    left: 0;
+}
+
+html[dir="rtl"] .craft-detail-strip-item {
+    border-right: 0;
+    border-left: 1px solid var(--border-color);
+}
+
+html[dir="rtl"] .craft-detail-strip-item:last-child {
+    border-left: 0;
+}
+
+html[dir="rtl"] .craft-detail-signature {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .craft-detail-copy {
+        right: auto;
+        left: auto;
+    }
+
+    html[dir="rtl"] .craft-detail-strip-item {
+        border-left: 1px solid var(--border-color);
+    }
+
+    html[dir="rtl"] .craft-detail-strip-item:nth-child(2) {
+        border-left: 0;
+    }
+}
+
+@media (max-width: 360px) {
+
+    html[dir="rtl"] .craft-detail-strip-item {
+        border-left: 0;
+    }
+}
+
+.workshop-experience-section {
+    width: 100%;
+    padding: 120px 0;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.workshop-experience-container {
+    width: min(1250px, 90%);
+    margin: 0 auto;
+}
+
+.workshop-experience-heading {
+    max-width: 800px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.workshop-experience-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--secondary);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.workshop-experience-tag::before,
+.workshop-experience-tag::after {
+    content: "";
+
+    width: 30px;
+    height: 1px;
+
+    background: var(--secondary);
+}
+
+.workshop-experience-heading h2 {
+    margin: 0;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(58px, 7vw, 94px);
+    line-height: .86;
+
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+.workshop-experience-heading h2 span {
+    display: block;
+    color: var(--primary);
+}
+
+.workshop-experience-heading p {
+    max-width: 610px;
+
+    margin: 25px auto 0;
+
+    color: var(--text-light);
+
+    font-size: 11px;
+    line-height: 1.9;
+}
+
+
+.workshop-experience-visual {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr .8fr;
+
+    min-height: 600px;
+}
+
+
+.workshop-experience-image {
+    position: relative;
+
+    height: 600px;
+
+    overflow: hidden;
+}
+
+.workshop-experience-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(10, 7, 5, .75),
+            transparent 55%
+        );
+}
+
+.workshop-experience-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .8s ease;
+}
+
+.workshop-experience-image:hover img {
+    transform: scale(1.04);
+}
+
+.workshop-experience-image-text {
+    position: absolute;
+
+    z-index: 2;
+
+    left: 35px;
+    bottom: 32px;
+}
+
+.workshop-experience-image-text span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: rgba(255,255,255,.65);
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.workshop-experience-image-text strong {
+    color: #fff;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 38px;
+    line-height: 1;
+
+    font-weight: 500;
+}
+
+
+.workshop-experience-details {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 20px 0 20px 55px;
+}
+
+
+.workshop-experience-step {
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    gap: 20px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.workshop-experience-step:first-child {
+    border-top: 1px solid var(--border-color);
+}
+
+.workshop-experience-step > span {
+    color: var(--secondary);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 20px;
+}
+
+.workshop-experience-step h3 {
+    margin: 0 0 8px;
+
+    color: var(--heading-color);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 30px;
+    line-height: 1;
+
+    font-weight: 600;
+}
+
+.workshop-experience-step p {
+    max-width: 300px;
+
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 9px;
+    line-height: 1.8;
+}
+
+
+.workshop-experience-footer {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    margin-top: 45px;
+
+    color: var(--text-light);
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.workshop-experience-footer div {
+    flex: 1;
+
+    height: 1px;
+
+    background: var(--border-color);
+}
+
+
+@media (max-width: 1024px) {
+
+    .workshop-experience-section {
+        padding: 90px 0;
+    }
+
+    .workshop-experience-heading {
+        margin-bottom: 55px;
+    }
+
+    .workshop-experience-visual {
+        min-height: 520px;
+    }
+
+    .workshop-experience-image {
+        height: 520px;
+    }
+
+    .workshop-experience-details {
+        padding-left: 35px;
+    }
+
+    .workshop-experience-step {
+        grid-template-columns: 42px 1fr;
+
+        gap: 12px;
+
+        padding: 20px 0;
+    }
+
+    .workshop-experience-step h3 {
+        font-size: 26px;
+    }
+
+    .workshop-experience-step p {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .workshop-experience-section {
+        padding: 75px 0;
+    }
+
+    .workshop-experience-heading {
+        margin-bottom: 40px;
+    }
+
+    .workshop-experience-heading h2 {
+        font-size: 58px;
+    }
+
+    .workshop-experience-visual {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+    }
+
+    .workshop-experience-image {
+        height: 430px;
+    }
+
+    .workshop-experience-details {
+        padding: 35px 0 0;
+    }
+
+    .workshop-experience-step {
+        padding: 22px 0;
+    }
+
+    .workshop-experience-step p {
+        max-width: 500px;
+    }
+
+    .workshop-experience-footer {
+        margin-top: 35px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .workshop-experience-section {
+        padding: 60px 0;
+    }
+
+    .workshop-experience-container {
+        width: 92%;
+    }
+
+    .workshop-experience-tag {
+        gap: 7px;
+
+        font-size: 8px;
+        letter-spacing: 1.8px;
+    }
+
+    .workshop-experience-tag::before,
+    .workshop-experience-tag::after {
+        width: 20px;
+    }
+
+    .workshop-experience-heading h2 {
+        font-size: 45px;
+
+        letter-spacing: -1px;
+    }
+
+    .workshop-experience-heading p {
+        font-size: 9px;
+        line-height: 1.75;
+    }
+
+    .workshop-experience-image {
+        height: 320px;
+    }
+
+    .workshop-experience-image-text {
+        left: 18px;
+        bottom: 20px;
+    }
+
+    .workshop-experience-image-text strong {
+        font-size: 28px;
+    }
+
+    .workshop-experience-step {
+        grid-template-columns: 35px 1fr;
+
+        gap: 10px;
+
+        padding: 18px 0;
+    }
+
+    .workshop-experience-step h3 {
+        font-size: 25px;
+    }
+
+    .workshop-experience-step p {
+        font-size: 9px;
+        line-height: 1.75;
+    }
+
+    .workshop-experience-footer {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .workshop-experience-footer div {
+        display: none;
+    }
+}
+
+
+html[dir="rtl"] .workshop-experience-container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .workshop-experience-image-text {
+    left: auto;
+    right: 35px;
+}
+
+html[dir="rtl"] .workshop-experience-details {
+    padding-left: 0;
+    padding-right: 55px;
+}
+
+@media (max-width: 1024px) {
+
+    html[dir="rtl"] .workshop-experience-details {
+        padding-left: 0;
+        padding-right: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .workshop-experience-details {
+        padding-right: 0;
+    }
+
+    html[dir="rtl"] .workshop-experience-image-text {
+        left: auto;
+        right: 25px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    html[dir="rtl"] .workshop-experience-image-text {
+        left: auto;
+        right: 18px;
+    }
+}
+
+.simple-process-cta {
+    width: 100%;
+    padding: 100px 0;
+
+    background: var(--primary);
+
+    text-align: center;
+}
+
+.simple-process-cta-container {
+    width: min(800px, 90%);
+    margin: 0 auto;
+}
+
+.simple-process-cta-tag {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: var(--secondary);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.simple-process-cta h2 {
+    margin: 0;
+
+    color: #fff;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(55px, 6vw, 78px);
+    line-height: .9;
+
+    font-weight: 500;
+}
+
+.simple-process-cta h2 span {
+    color: var(--secondary);
+}
+
+.simple-process-cta p {
+    max-width: 540px;
+
+    margin: 22px auto 30px;
+
+    color: rgba(255,255,255,.72);
+
+    font-size: 11px;
+    line-height: 1.9;
+}
+
+.simple-process-cta-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 14px 23px;
+
+    background: var(--secondary);
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .7px;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.simple-process-cta-button svg {
+    width: 14px;
+    height: 14px;
+}
+
+.simple-process-cta-button:hover {
+    background: var(--secondary-dark);
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 1024px) {
+
+    .simple-process-cta {
+        padding: 85px 0;
+    }
+
+    .simple-process-cta h2 {
+        font-size: 64px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .simple-process-cta {
+        padding: 75px 0;
+    }
+
+    .simple-process-cta h2 {
+        font-size: 56px;
+    }
+
+    .simple-process-cta p {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .simple-process-cta {
+        padding: 60px 0;
+    }
+
+    .simple-process-cta-container {
+        width: 92%;
+    }
+
+    .simple-process-cta-tag {
+        font-size: 8px;
+        letter-spacing: 1.8px;
+    }
+
+    .simple-process-cta h2 {
+        font-size: 44px;
+    }
+
+    .simple-process-cta p {
+        font-size: 9px;
+        line-height: 1.75;
+    }
+
+    .simple-process-cta-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+html[dir="rtl"] .simple-process-cta-container {
+    direction: rtl;
+}

@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WoodWorks | Custom Furniture & Carpentry</title>
+
+    <link rel="icon" type="image/png" sizes="184x184" href="logo.png">
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="navbar-container nav">
+
+        <div class="logo">
+            <a href="index.html">
+
+                <img src="logo.png"
+                     alt="WoodWorks Custom Furniture & Carpentry Logo">
+
+                <span class="logo-text">
+                    Wood<span class="logo-header-secondary">Works</span>
+                </span>
+
+            </a>
+        </div>
+
+
+        <nav class="nav-links" id="navMenu">
+
+            <div class="dropdown">
+
+                <a href="index.html"
+                   class="nav-item nav-link"
+                   data-page="home">
+
+                    Home
+
+                    <i data-lucide="chevron-down"></i>
+
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="index.html"
+                       class="nav-link"
+                       data-page="home">
+                        Home 1
+                    </a>
+
+                    <a href="home-2.html"
+                       class="nav-link"
+                       data-page="home">
+                        Home 2
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <a href="portfolio.html" class="nav-link">
+                Portfolio
+            </a>
+
+
+            <a href="materials.html" class="nav-link">
+               Materials & Finishes 
+            </a>
+
+
+            <a href="process.html" class="nav-link">
+                Our Process
+            </a>
+
+
+            <a href="contact.html" class="nav-link">
+                Contact
+            </a>
+
+
+            
+
+
+            <button class="btn-primary mobile-login"
+                    id="mobileLoginBtn">
+                Enquiry form
+            </button>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button id="rtlToggle"
+                    class="btn-secondary">
+                RTL
+            </button>
+
+
+            <button id="themeToggle"
+                    class="icon-btn">
+
+                <i data-lucide="moon"
+                   class="icon"></i>
+
+            </button>
+
+
+            <button class="btn-primary desktop-login"
+                    id="loginBtn">
+                Enquiry form
+            </button>
+
+
+            <button id="menuToggle"
+                    class="hamburger">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<section class="custom-enquiry-hero">
+
+    <div class="custom-enquiry-hero-container">
+
+        <div class="custom-enquiry-hero-content">
+
+            <span class="custom-enquiry-label">
+                CUSTOM ORDER ENQUIRY
+            </span>
+
+            <h1>
+                Let's Build
+                <span>Your Furniture.</span>
+            </h1>
+
+            <p>
+                Have a furniture idea in mind? Share your requirements,
+                preferred materials, dimensions and design preferences.
+                Our team will help bring your vision to life.
+            </p>
+
+            <div class="custom-enquiry-meta">
+
+                <div>
+                    <span>01</span>
+                    <strong>Tell Us</strong>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <strong>We Design</strong>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <strong>We Craft</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="custom-enquiry-hero-image">
+
+            <img
+                src="Woodworker-cutting-timber.jpg"
+                alt="Woodworker crafting custom furniture">
+
+            <div class="custom-enquiry-image-caption">
+
+                <span>CRAFTED FOR YOUR SPACE</span>
+
+                <strong>
+                    Made To Order.
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="custom-order-form-section" id="custom-order-form">
+
+    <div class="custom-order-form-container">
+
+        <div class="custom-order-form-heading">
+
+            <span class="custom-order-form-tag">
+                PROJECT DETAILS
+            </span>
+
+            <h2>
+                Tell Us About
+                <span>Your Furniture.</span>
+            </h2>
+
+            <p>
+                The more details you share, the better we can understand
+                your requirements and prepare a suitable custom solution.
+            </p>
+
+        </div>
+
+
+        <form class="custom-order-form">
+
+            <div class="custom-order-form-group">
+
+                <span class="custom-order-form-number">01</span>
+
+                <div class="custom-order-form-fields">
+
+                    <h3>About You</h3>
+
+                    <div class="custom-order-row">
+
+                        <div class="custom-order-field">
+                            <label for="customer-name">FULL NAME</label>
+
+                            <input
+                                type="text"
+                                id="customer-name"
+                                placeholder="Your name"
+                                required
+                            >
+                        </div>
+
+                        <div class="custom-order-field">
+                            <label for="customer-phone">PHONE NUMBER</label>
+
+                            <input
+                                type="tel"
+                                id="customer-phone"
+                                placeholder="Your phone number"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="custom-order-row">
+
+                        <div class="custom-order-field">
+                            <label for="customer-email">EMAIL ADDRESS</label>
+
+                            <input
+                                type="email"
+                                id="customer-email"
+                                placeholder="Your email address"
+                                required
+                            >
+                        </div>
+
+                        <div class="custom-order-field">
+                            <label for="project-location">PROJECT LOCATION</label>
+
+                            <input
+                                type="text"
+                                id="project-location"
+                                placeholder="City / Location"
+                            >
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="custom-order-form-group">
+
+                <span class="custom-order-form-number">02</span>
+
+                <div class="custom-order-form-fields">
+
+                    <h3>Furniture Requirements</h3>
+
+                    <div class="custom-order-row">
+
+                        <div class="custom-order-field">
+
+                            <label for="furniture-type">
+                                FURNITURE TYPE
+                            </label>
+
+                            <select id="furniture-type">
+
+                                <option value="">
+                                    Select furniture type
+                                </option>
+
+                                <option>Dining Table</option>
+                                <option>Coffee Table</option>
+                                <option>Bed</option>
+                                <option>Wardrobe</option>
+                                <option>TV Unit</option>
+                                <option>Bookshelf</option>
+                                <option>Storage Unit</option>
+                                <option>Office Furniture</option>
+                                <option>Custom Furniture</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="custom-order-field">
+
+                            <label for="quantity">
+                                QUANTITY
+                            </label>
+
+                            <input
+                                type="number"
+                                id="quantity"
+                                min="1"
+                                placeholder="Number of pieces"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="custom-order-row">
+
+                        <div class="custom-order-field">
+
+                            <label for="dimensions">
+                                APPROXIMATE DIMENSIONS
+                            </label>
+
+                            <input
+                                type="text"
+                                id="dimensions"
+                                placeholder="Example: 6 ft × 3 ft × 2.5 ft"
+                            >
+
+                        </div>
+
+
+                        <div class="custom-order-field">
+
+                            <label for="usage">
+                                INTENDED USE
+                            </label>
+
+                            <select id="usage">
+
+                                <option value="">
+                                    Select usage
+                                </option>
+
+                                <option>Home</option>
+                                <option>Office</option>
+                                <option>Restaurant</option>
+                                <option>Commercial Space</option>
+                                <option>Other</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="custom-order-form-group">
+
+                <span class="custom-order-form-number">03</span>
+
+                <div class="custom-order-form-fields">
+
+                    <h3>Materials & Finish</h3>
+
+                    <div class="custom-order-row">
+
+                        <div class="custom-order-field">
+
+                            <label for="material">
+                                PREFERRED MATERIAL
+                            </label>
+
+                            <select id="material">
+
+                                <option value="">
+                                    Select material
+                                </option>
+
+                                <option>Solid Wood</option>
+                                <option>Oak</option>
+                                <option>Teak</option>
+                                <option>Walnut</option>
+                                <option>Plywood</option>
+                                <option>MDF</option>
+                                <option>Not Sure — Need Guidance</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="custom-order-field">
+
+                            <label for="finish">
+                                PREFERRED FINISH
+                            </label>
+
+                            <select id="finish">
+
+                                <option value="">
+                                    Select finish
+                                </option>
+
+                                <option>Natural Wood</option>
+                                <option>Matte</option>
+                                <option>Gloss</option>
+                                <option>Stained</option>
+                                <option>Painted</option>
+                                <option>Not Sure</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="custom-order-field">
+
+                        <label for="project-description">
+                            DESCRIBE YOUR PROJECT
+                        </label>
+
+                        <textarea
+                            id="project-description"
+                            rows="6"
+                            placeholder="Tell us about your design idea, preferred style, requirements or anything else we should know..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="custom-order-form-group">
+
+                <span class="custom-order-form-number">04</span>
+
+                <div class="custom-order-form-fields">
+
+                    <h3>Budget & Timeline</h3>
+
+                    <div class="custom-order-row">
+
+                        <div class="custom-order-field">
+
+                            <label for="budget">
+                                ESTIMATED BUDGET
+                            </label>
+
+                            <select id="budget">
+
+                                <option value="">
+                                    Select budget range
+                                </option>
+
+                                <option>Below ₹25,000</option>
+                                <option>₹25,000 – ₹50,000</option>
+                                <option>₹50,000 – ₹1,00,000</option>
+                                <option>₹1,00,000 – ₹2,00,000</option>
+                                <option>Above ₹2,00,000</option>
+                                <option>Not Decided</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="custom-order-field">
+
+                            <label for="timeline">
+                                EXPECTED TIMELINE
+                            </label>
+
+                            <select id="timeline">
+
+                                <option value="">
+                                    Select timeline
+                                </option>
+
+                                <option>As Soon As Possible</option>
+                                <option>Within 1 Month</option>
+                                <option>1–3 Months</option>
+                                <option>3–6 Months</option>
+                                <option>Flexible</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="custom-order-submit-area">
+
+                <label class="custom-order-agreement">
+
+                    <input type="checkbox" required>
+
+                    <span>
+                        I agree to be contacted regarding my custom furniture enquiry.
+                    </span>
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="custom-order-submit"
+                >
+
+                    Submit Enquiry
+
+                    <i data-lucide="arrow-up-right"></i>
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section class="enquiry-followup-section">
+
+    <div class="enquiry-followup-container">
+
+        <div class="enquiry-followup-heading">
+
+            <span class="enquiry-followup-tag">
+                AFTER YOU SUBMIT
+            </span>
+
+            <h2>
+                From Enquiry
+                <span>To Creation.</span>
+            </h2>
+
+            <p>
+                Once we receive your requirements, our team reviews the
+                details and gets in touch to discuss your project further.
+            </p>
+
+        </div>
+
+
+        <div class="enquiry-followup-process">
+
+            <div class="enquiry-followup-item">
+
+                <div class="enquiry-followup-number">
+                    01
+                </div>
+
+                <div class="enquiry-followup-content">
+
+                    <h3>We Review</h3>
+
+                    <p>
+                        We carefully go through your furniture requirements,
+                        dimensions, materials and design preferences.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="enquiry-followup-line"></div>
+
+
+            <div class="enquiry-followup-item">
+
+                <div class="enquiry-followup-number">
+                    02
+                </div>
+
+                <div class="enquiry-followup-content">
+
+                    <h3>We Discuss</h3>
+
+                    <p>
+                        Our team contacts you to understand your idea,
+                        answer questions and discuss suitable options.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="enquiry-followup-line"></div>
+
+
+            <div class="enquiry-followup-item">
+
+                <div class="enquiry-followup-number">
+                    03
+                </div>
+
+                <div class="enquiry-followup-content">
+
+                    <h3>We Plan</h3>
+
+                    <p>
+                        We work through the design, materials, finish,
+                        pricing and expected production timeline.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="enquiry-followup-line"></div>
+
+
+            <div class="enquiry-followup-item">
+
+                <div class="enquiry-followup-number">
+                    04
+                </div>
+
+                <div class="enquiry-followup-content">
+
+                    <h3>We Craft</h3>
+
+                    <p>
+                        Once everything is confirmed, skilled craftsmen
+                        begin creating your furniture.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact-workshop-section">
+
+    <div class="contact-workshop-container">
+
+        <div class="contact-workshop-content">
+
+            <span class="contact-workshop-tag">
+                COME VISIT US
+            </span>
+
+            <h2>
+                See Where
+                <span>Ideas Become Real.</span>
+            </h2>
+
+            <p>
+                Want to discuss your project in person? Visit our workshop
+                to explore materials, finishes and ongoing furniture work
+                with our team.
+            </p>
+
+            <div class="contact-workshop-details">
+
+                <div class="contact-workshop-detail">
+
+                    <i data-lucide="map-pin"></i>
+
+                    <div>
+                        <span>WORKSHOP ADDRESS</span>
+                        <strong>
+                            benguluru,India
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-workshop-detail">
+
+                    <i data-lucide="clock-3"></i>
+
+                    <div>
+                        <span>WORKING HOURS</span>
+                        <strong>
+                            Monday – Saturday<br>
+                            10:00 AM – 6:30 PM
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a
+                href="#"
+                class="contact-workshop-button"
+            >
+                Get Directions
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="contact-workshop-map">
+
+            <iframe
+                src="https://www.google.com/maps?q=Bengaluru,Karnataka,India&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Our Workshop Location">
+            </iframe>
+
+            <div class="contact-workshop-map-label">
+
+                <i data-lucide="map-pin"></i>
+
+                <div>
+                    <span>OUR WORKSHOP</span>
+                    <strong>bengaluru</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact-faq-section">
+
+    <div class="contact-faq-container">
+
+        <div class="contact-faq-heading">
+
+            <span class="contact-faq-tag">
+                HAVE QUESTIONS?
+            </span>
+
+            <h2>
+                Before You
+                <span>Get Started.</span>
+            </h2>
+
+            <p>
+                Here are a few things customers commonly ask before
+                placing a custom furniture enquiry.
+            </p>
+
+        </div>
+
+
+        <div class="contact-faq-list">
+
+            <details class="contact-faq-item" open>
+
+                <summary>
+                    <span>How does the custom order process work?</span>
+                    <span class="faq-toggle-icon"></span>
+                </summary>
+
+                <div class="contact-faq-answer">
+                    <p>
+                        Submit your requirements through the enquiry form.
+                        We'll review your project, discuss the details with
+                        you, and then work through the design, materials,
+                        pricing and production timeline.
+                    </p>
+                </div>
+
+            </details>
+
+
+            <details class="contact-faq-item">
+
+                <summary>
+                    <span>Can I request specific dimensions?</span>
+                    <span class="faq-toggle-icon"></span>
+                </summary>
+
+                <div class="contact-faq-answer">
+                    <p>
+                        Yes. Custom dimensions are welcome. Include your
+                        approximate measurements in the enquiry form and
+                        we'll discuss the suitable proportions with you.
+                    </p>
+                </div>
+
+            </details>
+
+
+            <details class="contact-faq-item">
+
+                <summary>
+                    <span>Can you help me choose the right material?</span>
+                    <span class="faq-toggle-icon"></span>
+                </summary>
+
+                <div class="contact-faq-answer">
+                    <p>
+                        Absolutely. If you're unsure about the material or
+                        finish, mention it in your enquiry and our team can
+                        help you select an option based on the furniture,
+                        usage and desired appearance.
+                    </p>
+                </div>
+
+            </details>
+
+
+            <details class="contact-faq-item">
+
+                <summary>
+                    <span>Can I share reference images?</span>
+                    <span class="faq-toggle-icon"></span>
+                </summary>
+
+                <div class="contact-faq-answer">
+                    <p>
+                        Yes. Reference images, sketches and inspiration
+                        examples can help us understand your preferred
+                        style and overall direction.
+                    </p>
+                </div>
+
+            </details>
+
+
+            <details class="contact-faq-item">
+
+                <summary>
+                    <span>How long does a custom order take?</span>
+                    <span class="faq-toggle-icon"></span>
+                </summary>
+
+                <div class="contact-faq-answer">
+                    <p>
+                        The timeline depends on the furniture type,
+                        dimensions, materials, finish and quantity. We'll
+                        provide an estimated timeline after reviewing
+                        your requirements.
+                    </p>
+                </div>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact-final-cta">
+
+    <div class="contact-final-cta-container">
+
+        <span class="contact-final-cta-tag">
+            HAVE A PROJECT IN MIND?
+        </span>
+
+        <h2>
+            Let's Create Something
+            <span>Made For You.</span>
+        </h2>
+
+        <p>
+            Tell us what you're looking for and let's start planning
+            your custom furniture piece.
+        </p>
+
+        <a href="#custom-order-form" class="contact-final-cta-button">
+            Start Your Custom Order
+            <i data-lucide="arrow-up-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-container footer-grid">
+
+
+        <div class="footer-col">
+
+            <h3 class="footer-title"
+                id="homepage-redirect">
+
+                <img src="logo.png"
+                     alt="WoodWorks - Custom Furniture & Carpentry"
+                     class="footer-logo">
+
+
+                <span class="footer-brand">
+
+                    <span class="brand-primary">
+                        Wood
+                    </span>
+
+                    <span class="brand-secondary">
+                        Works
+                    </span>
+
+                </span>
+
+            </h3>
+
+
+            <p>
+                Creating thoughtfully designed custom furniture with
+                skilled craftsmanship, quality materials, and timeless
+                attention to detail. Every piece is designed and built
+                to bring lasting character to your space.
+            </p>
+
+
+            <div class="footer-social">
+
+                <a href="#"
+                   class="social-icon"
+                   aria-label="Facebook">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                </a>
+
+
+                <a href="#"
+                   class="social-icon"
+                   aria-label="Instagram">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+
+                <a href="#"
+                   class="social-icon"
+                   aria-label="Pinterest">
+
+                    <i class="fab fa-pinterest-p"></i>
+
+                </a>
+
+
+                <a href="#"
+                   class="social-icon"
+                   aria-label="LinkedIn">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4 class="footer-subtitle">
+                Quick Links
+            </h4>
+
+
+            <a href="home-2.html">
+                Home
+            </a>
+
+
+
+            <a href="portfolio.html">
+                Portfolio
+            </a>
+
+
+            <a href="materials.html">
+                Materials & Finishes
+            </a>
+
+
+            <a href="process.html">
+                Our Process
+            </a>
+
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4 class="footer-subtitle">
+                Furniture
+            </h4>
+
+
+            <a href="portfolio.html">
+                Custom Tables
+            </a>
+
+
+            <a href="portfolio.html">
+                Beds & Headboards
+            </a>
+
+
+            <a href="portfolio.html">
+                Storage Units
+            </a>
+
+
+            <a href="portfolio.html">
+                Cabinets
+            </a>
+
+
+            <a href="portfolio.html">
+                Dining Furniture
+            </a>
+
+
+            <a href="portfolio.html">
+                Bespoke Pieces
+            </a>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4 class="footer-subtitle">
+                Workshop
+            </h4>
+
+
+            <a href="materials.html">
+                Wood Materials
+            </a>
+
+
+            <a href="materials.html">
+                Finishes
+            </a>
+
+
+            <a href="process.html">
+                Our Process
+            </a>
+
+
+            <a href="orders.html">
+                Custom Orders
+            </a>
+
+
+            <a href="contact.html">
+                Request a Quote
+            </a>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4 class="footer-subtitle">
+                Contact Us
+            </h4>
+
+
+            <p>
+                Email: hello@woodworks.com
+            </p>
+
+
+            <p>
+                Phone: +91 0000000000
+            </p>
+
+
+            <p>
+                Location: India
+            </p>
+
+
+            <p>
+                Workshop Hours: Mon - Sat
+            </p>
+
+
+            <p>
+                9:00 AM - 6:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="footer-container footer-bottom-content">
+
+            <p>
+                © 2026 WoodWorks. All rights reserved.
+            </p>
+
+
+            <div class="footer-links">
+
+                <a href="terms&conditions.html">
+                    Terms & Conditions
+                </a>
+
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+    const loginBtn = document.getElementById("loginBtn");
+
+    if (loginBtn) {
+
+        loginBtn.addEventListener("click", () => {
+
+            window.location.href = "login.html";
+
+        });
+
+    }
+
+
+
+    const mobileLoginBtn =
+        document.getElementById("mobileLoginBtn");
+
+    if (mobileLoginBtn) {
+
+        mobileLoginBtn.addEventListener("click", () => {
+
+            window.location.href = "login.html";
+
+        });
+
+    }
+
+
+
+    const links =
+        document.querySelectorAll(".nav-link");
+
+    const currentPage =
+        window.location.pathname.split("/").pop()
+        || "index.html";
+
+
+    links.forEach(link => {
+
+        const href =
+            link.getAttribute("href");
+
+        if (!href) return;
+
+        const page =
+            href.split("/").pop();
+
+
+        if (page === currentPage) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+
+
+    const homePages = [
+        "index.html",
+        "home-1.html",
+        "home-2.html"
+    ];
+
+
+    if (homePages.includes(currentPage)) {
+
+        const homeLink =
+            document.querySelector(
+                '.nav-link[href="index.html"]'
+            );
+
+
+        if (homeLink) {
+
+            homeLink.classList.add("active");
+
+        }
+
+    }
+
+
+
+    const themeToggle =
+        document.getElementById("themeToggle");
+
+
+    if (localStorage.getItem("theme") === "dark") {
+
+        document.body.classList.add("dark");
+
+    }
+
+
+    if (themeToggle) {
+
+        themeToggle.innerHTML =
+            document.body.classList.contains("dark")
+            ? '<i data-lucide="sun"></i>'
+            : '<i data-lucide="moon"></i>';
+
+
+        lucide.createIcons();
+
+
+        themeToggle.addEventListener("click", () => {
+
+            document.body.classList.toggle("dark");
+
+
+            if (
+                document.body.classList.contains("dark")
+            ) {
+
+                localStorage.setItem(
+                    "theme",
+                    "dark"
+                );
+
+                themeToggle.innerHTML =
+                    '<i data-lucide="sun"></i>';
+
+            } else {
+
+                localStorage.setItem(
+                    "theme",
+                    "light"
+                );
+
+                themeToggle.innerHTML =
+                    '<i data-lucide="moon"></i>';
+
+            }
+
+
+            lucide.createIcons();
+
+        });
+
+    }
+
+
+
+    const rtlToggle =
+        document.getElementById("rtlToggle");
+
+
+    const savedDir =
+        localStorage.getItem("direction")
+        || "ltr";
+
+
+    document.documentElement.setAttribute(
+        "dir",
+        savedDir
+    );
+
+
+    if (rtlToggle) {
+
+        rtlToggle.textContent =
+            savedDir === "rtl"
+            ? "LTR"
+            : "RTL";
+
+
+        rtlToggle.addEventListener("click", () => {
+
+            const currentDir =
+                document.documentElement
+                .getAttribute("dir");
+
+
+            if (currentDir === "rtl") {
+
+                document.documentElement
+                    .setAttribute("dir", "ltr");
+
+                localStorage.setItem(
+                    "direction",
+                    "ltr"
+                );
+
+                rtlToggle.textContent = "RTL";
+
+            } else {
+
+                document.documentElement
+                    .setAttribute("dir", "rtl");
+
+                localStorage.setItem(
+                    "direction",
+                    "rtl"
+                );
+
+                rtlToggle.textContent = "LTR";
+
+            }
+
+        });
+
+    }
+
+
+
+    const menuToggle =
+        document.getElementById("menuToggle");
+
+
+    const navMenu =
+        document.getElementById("navMenu");
+
+
+    if (menuToggle && navMenu) {
+
+        menuToggle.addEventListener("click", () => {
+
+            navMenu.classList.toggle("active");
+
+        });
+
+
+        document.addEventListener("click", (e) => {
+
+            if (
+                !navMenu.contains(e.target)
+                &&
+                !menuToggle.contains(e.target)
+            ) {
+
+                navMenu.classList.remove("active");
+
+
+                document
+                    .querySelectorAll(".dropdown-menu")
+                    .forEach(menu => {
+
+                        menu.classList.remove("show");
+
+                    });
+
+            }
+
+        });
+
+    }
+
+
+
+    document
+        .querySelectorAll(".dropdown")
+        .forEach(drop => {
+
+            const toggle =
+                drop.querySelector(".nav-item");
+
+            const menu =
+                drop.querySelector(".dropdown-menu");
+
+
+            if (toggle && menu) {
+
+                toggle.addEventListener(
+                    "click",
+                    (e) => {
+
+                        if (window.innerWidth <= 1025) {
+
+                            e.preventDefault();
+
+                            menu.classList.toggle(
+                                "show"
+                            );
+
+                        }
+
+                    }
+                );
+
+            }
+
+        });
+
+
+
+    const homepageRedirect =
+        document.getElementById(
+            "homepage-redirect"
+        );
+
+
+    if (homepageRedirect) {
+
+        homepageRedirect.addEventListener(
+            "click",
+            () => {
+
+                window.location.href =
+                    "index.html";
+
+            }
+        );
+
+    }
+
+});
+
+</script>
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+
+lucide.createIcons();
+
+</script>
+
+
+</body>
+</html>
