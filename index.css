@@ -561,14 +561,15 @@ html[dir="rtl"] .text-link:hover svg {
     display: block;
     color: var(--primary);
 }
+.outline-link-header{
+    display:flex;
+    justify-content: center;
+}
 
 .outline-link {
     min-height: 46px;
-    padding: 0 18px;
+    padding: 10px 18px;
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     gap: 9px;
 
     border: 1px solid var(--border-color);
@@ -579,11 +580,14 @@ html[dir="rtl"] .text-link:hover svg {
     font-weight: 600;
 
     transition: 0.3s ease;
+    margin-top: 20px;
 }
 
 .outline-link svg {
-    width: 16px;
-    height: 16px;
+    width: 25px;
+    height: 25px;
+    
+    margin:5px 0 0 5px;
 }
 
 .outline-link:hover {
@@ -2245,9 +2249,14 @@ html[dir="rtl"] .craft-button {
     background:
         linear-gradient(
             135deg,
-            var(--primary),
-            var(--primary-dark)
-        );
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("Woodworking-craftsmanship-detail.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     overflow: hidden;
 }
@@ -2331,8 +2340,9 @@ html[dir="rtl"] .craft-button {
     margin-top: 30px;
     padding: 14px 22px;
 
-    background: var(--secondary);
-    border: 1px solid var(--secondary);
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius:4px;
 
     color: #fff;
 
@@ -2352,8 +2362,9 @@ html[dir="rtl"] .craft-button {
 }
 
 .custom-cta-button:hover {
-    background: transparent;
-    color: var(--secondary);
+    background: var(--secondary);
+    border-color: var(--secondary);
+    
 }
 
 .custom-cta-button:hover svg {

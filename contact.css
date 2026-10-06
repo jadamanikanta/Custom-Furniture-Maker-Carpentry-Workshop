@@ -2121,3 +2121,297 @@ html[dir="rtl"] .contact-faq-answer {
 html[dir="rtl"] .contact-final-cta-container {
     direction: rtl;
 }
+
+.contact-form-section {
+    width: 100%;
+    padding: 80px 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.contact-form-container {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.contact-form-heading {
+    max-width: 650px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.contact-form-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.contact-form-label span {
+    width: 28px;
+    height: 1px;
+    background: var(--secondary);
+}
+
+.contact-form-heading h2 {
+    margin: 0 0 15px;
+    color: var(--heading-color);
+    font-size: 38px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.contact-form-heading p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 35px;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+}
+
+.contact-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.contact-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.contact-form-group label {
+    color: var(--heading-color);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.contact-form-group input,
+.contact-form-group select,
+.contact-form-group textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    outline: none;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.25s ease;
+    box-sizing: border-box;
+}
+
+.contact-form-group input,
+.contact-form-group select {
+    height: 48px;
+}
+
+.contact-form-group textarea {
+    min-height: 140px;
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.contact-form-group input::placeholder,
+.contact-form-group textarea::placeholder {
+    color: var(--text-light);
+}
+
+.contact-form-group input:focus,
+.contact-form-group select:focus,
+.contact-form-group textarea:focus {
+    border-color: var(--primary);
+}
+
+.contact-form-full {
+    margin-top: 24px;
+}
+
+.contact-form-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 28px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border-color);
+}
+
+.contact-form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-light);
+    font-size: 13px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.contact-form-check input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary);
+}
+
+.contact-form-button {
+    min-width: 170px;
+    padding: 14px 24px;
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+    border-radius:4px;
+}
+
+.contact-form-button:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+
+html[dir="rtl"] .contact-form-heading,
+html[dir="rtl"] .contact-form-group,
+html[dir="rtl"] .contact-form-check {
+    text-align: right;
+}
+
+html[dir="rtl"] .contact-form-heading {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html[dir="rtl"] .contact-form-label {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .contact-form-bottom {
+    flex-direction: row-reverse;
+}
+
+
+@media (max-width: 1024px) {
+
+    .contact-form-section {
+        padding: 70px 0;
+    }
+
+    .contact-form-container {
+        width: min(900px, calc(100% - 40px));
+    }
+
+    .contact-form-heading h2 {
+        font-size: 34px;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .contact-form-section {
+        padding: 60px 0;
+    }
+
+    .contact-form-container {
+        width: calc(100% - 32px);
+    }
+
+    .contact-form-heading {
+        margin-bottom: 35px;
+    }
+
+    .contact-form-heading h2 {
+        font-size: 30px;
+    }
+
+    .contact-form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .contact-form-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    html[dir="rtl"] .contact-form-bottom {
+        flex-direction: column;
+    }
+
+    .contact-form-button {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 360px) {
+
+    .contact-form-section {
+        padding: 50px 0;
+    }
+
+    .contact-form-container {
+        width: calc(100% - 24px);
+    }
+
+    .contact-form-heading h2 {
+        font-size: 25px;
+    }
+
+    .contact-form-heading p {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        padding: 18px;
+    }
+
+    .contact-form-label {
+        gap: 8px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .contact-form-label span {
+        width: 20px;
+    }
+
+    .contact-form-group input,
+    .contact-form-group select,
+    .contact-form-group textarea {
+        font-size: 13px;
+    }
+
+    .contact-form-check {
+        align-items: flex-start;
+        font-size: 12px;
+    }
+
+}

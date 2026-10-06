@@ -2,7 +2,7 @@
     position: relative;
 
     width: 100%;
-    min-height: 78vh;
+    min-height: 87vh;
 
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
 
     color: rgba(255,255,255,.75);
 
-    font-size: 12px;
+    font-size: 14px;
 
     line-height: 1.9;
 }
@@ -1007,7 +1007,7 @@ html[dir="rtl"] .finish-card-top > span {
 
     font-family: "Cormorant Garamond", Georgia, serif;
 
-    font-size: clamp(55px, 6vw, 78px);
+   font-size: clamp(52px, 5.5vw, 76px);
 
     line-height: .88;
 
@@ -1873,7 +1873,7 @@ html[dir="rtl"] .care-image-label {
 
     font-family: "Cormorant Garamond", Georgia, serif;
 
-    font-size: clamp(52px, 5vw, 72px);
+    font-size: clamp(52px, 5.5vw, 76px);
 
     line-height: .9;
 

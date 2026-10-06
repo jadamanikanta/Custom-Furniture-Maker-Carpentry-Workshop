@@ -270,7 +270,7 @@ body.dark .header {
 .btn-secondary,
 .icon-btn {
     height: 40px;
-    border-radius: 10px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -356,9 +356,7 @@ body.dark .icon-btn {
     color: var(--text);
 }
 
-/* =========================================================
-   LOGIN BUTTONS
-========================================================= */
+
 
 .desktop-login {
     display: inline-block;
@@ -368,9 +366,7 @@ body.dark .icon-btn {
     display: none;
 }
 
-/* =========================================================
-   NAV MOBILE
-========================================================= */
+
 
 @media (max-width: 768px) {
 
@@ -454,9 +450,7 @@ body.dark .icon-btn {
     }
 }
 
-/* =========================================================
-   DROPDOWN
-========================================================= */
+
 
 .dropdown {
     position: relative;
